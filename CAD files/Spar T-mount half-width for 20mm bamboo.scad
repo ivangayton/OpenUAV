@@ -10,6 +10,23 @@ screw_head_r=3.5;
       cube([32,12,14], center=true);
       translate([0,0,-5.5])
       cube([72,12,3], center=true);
+      // butresses
+      translate([18,0,0])
+      difference(){
+        cube([10,12,10], center=true);
+        rotate(45,[0,1,0])
+        translate([0,0,4.5])
+        cube([20,13,10], center=true);
+        }
+      mirror([1,0,0]){
+        translate([18,0,0])
+        difference(){
+          cube([10,12,10], center=true);
+          rotate(45,[0,1,0])
+          translate([0,0,4.5])
+          cube([20,13,10], center=true);
+          }
+        }
       }
    union()
       {
