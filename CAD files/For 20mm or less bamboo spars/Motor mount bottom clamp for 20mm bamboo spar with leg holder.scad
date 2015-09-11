@@ -24,13 +24,13 @@ leg_rad=5.1; // for a 10mm leg
       #cylinder(h=40,r=leg_rad,center=true,$fn=48);
 
       // Holes along side rails for bolting alongside spar
-      translate([12,-6,-20])
+      translate([12,-5,-20])
       cylinder(h=40,r=screw_hole_r,centre=true,$fn=48);
-      translate([-12,-6,-20])
+      translate([-12,-5,-20])
       cylinder(h=40,r=screw_hole_r,centre=true,$fn=48);
-      translate([12,6,-20])
+      translate([12,5,-20])
       cylinder(h=40,r=screw_hole_r,centre=true,$fn=48);
-      translate([-12,6,-20])
+      translate([-12,5,-20])
       cylinder(h=40,r=screw_hole_r,centre=true,$fn=48);
       
     }
