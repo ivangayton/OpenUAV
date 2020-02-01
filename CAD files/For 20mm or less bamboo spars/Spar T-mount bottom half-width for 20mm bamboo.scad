@@ -6,7 +6,7 @@ screw_head_r=3.5;
     {
       cube([32,12,14], center=true);  
    
-   #union()
+   union()
       {
       translate([0,0,9])
         // main notch for spar
